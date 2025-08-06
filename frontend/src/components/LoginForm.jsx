@@ -1,4 +1,4 @@
-import Button from './buttons/ButtonRegister';
+import ButtonAPIs from './buttons/ButtonLoginAPIs.jsx';
 import { FcGoogle } from 'react-icons/fc';
 
 const LoginForm = () => {
@@ -60,14 +60,10 @@ const LoginForm = () => {
                 </div>
 
                 {/* Botón de Google */}
-                <button
-                    type="button"
-                    className="flex items-center justify-center gap-3 w-full max-w-xs bg-white border border-gray-300 rounded-md px-4 py-2 shadow-sm hover:shadow-md transition duration-150"
-                    onClick={() => alert("Aquí va el login con Google")}
-                >
-                    <FcGoogle size={22} />
+                <ButtonAPIs type="button" onClick={() => alert("Aquí va el login con APIs")}>
+                    <FcGoogle className="text-2xl" />
                     <span className="text-sm text-gray-700 font-medium">Continuar con Google</span>
-                </button>
+                </ButtonAPIs>
 
             </div>   
         </form>
